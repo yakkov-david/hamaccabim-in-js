@@ -1,38 +1,31 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.red-button {
+  background-color: #ff0000; /* Red background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Small shadow for 3D effect */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Optional: transform text to uppercase */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.red-button:hover {
+  background-color: #cc0000; /* Darker red background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for 3D effect on hover */
+}
+.horizontal-line {
+  border: none; /* Removes the default border */
+  height: 2px; /* Sets the height of the line */
+  background-color: #dfd0d0; /* Sets the color of the line */
+  margin: 20px 0; /* Adds some vertical spacing around the line */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Add responsive design styles here using media queries */
